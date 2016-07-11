@@ -64,6 +64,7 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console'
   gem 'pry-rails'
+  gem 'listen'
 
   # Specs
   gem 'rspec-rails'
