@@ -10,7 +10,7 @@ gem 'puma'
 # Database
 gem 'pg'
 # gem 'paranoia'
-# gem 'acts-as-taggable-on', :git => 'https://github.com/F3pix/acts-as-taggable-on'
+gem 'acts-as-taggable-on', :git => 'https://github.com/F3pix/acts-as-taggable-on'
 gem 'friendly_id'
 gem 'email_validator'
 gem "rails-erd"
