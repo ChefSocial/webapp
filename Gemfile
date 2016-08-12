@@ -65,6 +65,10 @@ group :development, :test do
   gem 'web-console'
   gem 'pry-rails'
   gem 'listen'
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  # gem 'capistrano3-unicorn'
+  gem 'capistrano3-puma'
 
   # Specs
   gem 'rspec-rails'
