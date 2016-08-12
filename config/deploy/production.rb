@@ -9,7 +9,7 @@ set :stage,           :production
 set :deploy_via,      :remote_cache
 set :deploy_to,       "/home/#{fetch(:user)}/sites/#{fetch(:application)}"
 
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml .env.production}
 set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
