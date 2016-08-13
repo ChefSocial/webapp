@@ -69,6 +69,7 @@ group :development, :test do
   gem 'capistrano-rvm'
   # gem 'capistrano3-unicorn'
   gem 'capistrano3-puma'
+  gem 'capistrano-ssh-doctor'
 
   # Specs
   gem 'rspec-rails'

@@ -1,4 +1,6 @@
 # Load DSL and Setup Up Stages
+require 'capistrano/ssh_doctor'
+
 require 'capistrano/setup'
 require 'capistrano/deploy'
 
