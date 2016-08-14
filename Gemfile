@@ -25,6 +25,7 @@ gem 'turbolinks'
 gem 'jquery-turbolinks'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
+gem 'high_voltage'
 
 # Authentication/Authorization
 gem 'devise'
