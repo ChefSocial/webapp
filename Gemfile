@@ -27,6 +27,9 @@ gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'high_voltage'
 
+# External storage
+gem 'cloudinary'
+
 # Authentication/Authorization
 gem 'devise'
 
