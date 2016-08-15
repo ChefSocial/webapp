@@ -11,24 +11,9 @@ h1,h2,h3,h4,h5,h6,a,.btn,em,table td,p,li {
 /************************************************************************************************
 /* Font Declarations */
 /***********************************************************************************************/
-// @include font-face(GothamXLight, '../fonts/gothamextralight-webfont',100);
-// @include font-face(GothamMedium, '../fonts/gothammedium-webfont',100);
-// @include font-face(GothamBook, '../fonts/gothambook-webfont',100);
-// @include font-face(GothamLightItalic, '../fonts/gothamlightit-webfont',100);
 @include font-face(ProximaNova, 'proximanova-semibold-webfont',100, $asset-pipeline: true);
-// @include font-face(KulturistaBold, '../fonts/kulturista_bold-webfont',100);
-// @include font-face(KulturistaMedium, '../fonts/kulturista_medium-webfont',100);
-
-// @font-face {
-//   font-family: 'ProximaNova';
-//   src:font-url('proximanova-semibold-webfont.eot');
-//   src:font-url('proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-//     font-url('proximanova-semibold-webfont.svg#proximanova-semibold-webfont') format('svg'),
-//     font-url('proximanova-semibold-webfont.woff') format('woff'),
-//     font-url('proximanova-semibold-webfont.ttf') format('truetype');
-//   font-weight: normal;
-//   font-style: normal;
-// }
+// @include font-face(GothamXLight, 'gothamextralight-webfont',100, $asset-pipeline: true);
+// @include font-face(GothamMedium, 'gothammedium-webfont',100, $asset-pipeline: true);
 
 /************************************************************************************************
 /* Base Styles */
@@ -282,7 +267,36 @@ img::-moz-selection {
 }
 
 .brand-heading {
-  font: 100 66px "GothamXLight";
+  font: 100 45px "Playfair Display";
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+h5.intro-box {
+  overflow: hidden;
+  text-align: center;
+  max-width: 645px;
+  margin: 0 auto;
+  .intro-text {
+    position: relative;
+    display: inline-block;
+    font-family: "Playfair Display";
+    font-size: 14px;
+    line-height: 22px;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      border-bottom: 2px solid;
+      width: 591px; /* half of limiter*/
+      margin: 0 20px;
+    }
+    &:before{
+      right: 100%;
+    }
+    &:after {
+      left: 100%;
+    }
+  }
 }
 .thin-header {
   font: 100 60px/70px "GothamXLight";
@@ -1127,3 +1141,69 @@ and (max-device-width : 568px) {
   }
 }
 
+// Play button
+.play-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 124px;
+  width: 124px;
+  cursor: pointer;
+  text-align: center;
+  top: 50%;
+  z-index: 10;
+}
+.play-button .play-button-svg {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  /* IE 9 */
+  -webkit-transform: scale(1, 1);
+  /* Safari and Chrome */
+}
+.play-button .play-button-svg circle {
+  stroke: white;
+  stroke-width: 2;
+  fill: none;
+}
+.play-button p {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+  font: 100 14px ProximaNova;
+  text-transform: uppercase;
+}
+.play-button p:before {
+  display: none;
+}
+.play-button:hover .play-button-svg {
+  transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1, 1.1);
+  /* Safari and Chrome */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
