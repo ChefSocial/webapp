@@ -26,6 +26,7 @@ gem 'jquery-turbolinks'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
 gem 'high_voltage'
+gem 'bourbon'
 
 # External storage
 gem 'cloudinary'

@@ -350,6 +350,7 @@ DEPENDENCIES
   annotate
   better_errors
   bootstrap-sass
+  bourbon
   byebug
   cancan
   cloudinary
