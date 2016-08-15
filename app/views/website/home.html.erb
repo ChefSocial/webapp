@@ -1,20 +1,88 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#page-top">
+          <img class="logo-light" src="img/logo-light.png" alt="">
+          <img class="logo-dark" src="img/logo-dark.png" alt="">
+          <img class="logo-dark-small" src="img/logo-dark-small.png" alt="">
+          <img class="logo-light-small" src="img/logo-light-small.png" alt="">
+        </a>
+      </div>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li class="page-scroll">
+            <a href="#about">About Us</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#services">Services</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#case-study">Case Studies</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#footer">Contact</a>
+          </li>
+          <li class="page-scroll cta">
+            <a href="#services">Get Started</a>
+          </li>
+          <li>
+            <a href="tel:+2125713003">212.571.3003</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <section class="intro">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="brand-heading">Real Estate Consultants</h1>
+            <p class="intro-text">From making sense of changes in legislation affecting our clients to mastering the art of <br> minimizing liability, we've dependably guided our clients towards effective problem solutions</p>
+            <div class="row service-container">
+              <section class="selectfield-container">
+                <div class="selectfield">
+                  <div id="dd" class="selectfield-dropdown" tabindex="1">
+                    <h4>Select your service</h4>
+                    <ul class="dropdown" tabindex="1">
+                      <li class="head-list"><a href="#services">Violation Removal</a></li>
+                      <li class="list-options"><a href="#ecb-dob-hpd-section">ECB Violation</a></li>
+                      <li class="list-options"><a href="#ecb-dob-hpd-section">DOB Violation</a></li>
+                      <li class="list-options"><a href="#ecb-dob-hpd-section">HPD Violation</a></li>
+                      <li class="head-list"><a href="#start-violate">DHCR - Rent Stabilization</a></li>
+                      <li class="list-options"><a href="#admin-overcharge-section">Administrative proceedings</a></li>
+                      <li class="list-options"><a href="#admin-overcharge-section">Overcharge complaints</a></li>
+                      <li class="list-options"><a href="#annual-due-section">Annual registrations</a></li>
+                      <li class="list-options"><a href="#annual-due-section">Due diligence</a></li>
+                      <li class="head-list"><a href="#start-dhcr">Landlord Tenant Consulting</a></li>
+                      <li class="list-options"><a href="#landlord-tenant-section">Landlord Tenant Proceedings</a></li>
+                      <li class="list-options"><a href="#landlord-tenant-section">Landlord Tenant Investigations</a></li>
+                      <li class="list-options"><a href="#landlord-tenant-section">Landlord Tenant Buyouts</a></li>
+                    </ul>
+                  </div>
+                ​</div>
+              </section>
+              <a href="#services" id="section-navigator" class="contact-send-btn main-cover cta-scroll">Select</a>
+            </div>
+            <p class="intro-text select-info">To start your process please select your required service and hit select</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-scroller">
+     <h4>learn more about us & our services</h4>
+     <%= image_tag('down-caret.png', id: 'view-more-link', href: '#about') %>
+   </div>
+ </section>
