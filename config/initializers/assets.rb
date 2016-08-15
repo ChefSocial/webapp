@@ -8,3 +8,6 @@ Rails.application.config.assets.precompile += %w(
   website.css
 )
 
+Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
+
+
