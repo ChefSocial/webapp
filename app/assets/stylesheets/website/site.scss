@@ -206,7 +206,8 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: #ffffff;
-  background: image_url('background.jpg') no-repeat center scroll;
+  background-position: center; 
+  background-repeat: no-repeat;
   background-color: #000000;
   background-size: cover;
   background-attachment: fixed;
